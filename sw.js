@@ -9,7 +9,6 @@ const staticAssets = [
     './favicon.ico'
 ];
 
-
 self.addEventListener('install', async event => {
     const cache = await caches.open('mgosi-static');
     cache.addAll(staticAssets);
